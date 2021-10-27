@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IMAGE-2-ASCII</title>
+    <script src="js/main.js"></script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div>
+        <h1>IMAGE-2-ASCII</h1>
+    </div>
+    <div>
+        <input type='file' id='image_upload' accept="image/*" onchange="import_image_from_upload(event)">
+        <input type='button' id='image_process_ascii' value="Process" onclick="image_2_ascii()">
+    </div>
+    <div>
+        <!--<img id='image_preview_display_hidden' style="display: none;" width="420" height="420">-->
+        <img id='image_preview_display_hidden' style="display: none;">
+        <canvas id="image_preview_display" style="border:1px solid #d3d3d3;">
+    </div>
+    <div>
+        <p id="ascii_output" style="font-size: .01em; line-height: 80%;"><p>
+    </div>
+</body>
+
+</html>
