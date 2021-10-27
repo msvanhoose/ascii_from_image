@@ -1,0 +1,17 @@
+body{
+    background-color: rgba(95, 158, 160, 0.712);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1, footer{
+    background-color: indianred;
+    border:  2px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+canvas{
+    border: 2px dashed black;
+    margin: auto;
+    display: block;
+}
