@@ -51,12 +51,12 @@ function image_2_ascii() {
     var width = imgWidth;
     var height = imgHeight;
 
-    var ascii_text = '';
+    var ascii_text = '<pre>';
 
     var totalPixels = 0;
     for (var i = 0; i < pixels.length; i++) {
         if (!(i % width)) {
-            ascii_text += '<br>';
+            ascii_text += "\n"; //'<br>';
         }
         //ascii_text += pixels[i];
         switch (pixels[i]) {
@@ -81,6 +81,7 @@ function image_2_ascii() {
         }
         totalPixels++;
     }
+    ascii_text += '</pre>';
     console.log({totalPixels,width,height});
     //console.log(ascii_text);
     document.getElementById("ascii_output").innerHTML = ascii_text;

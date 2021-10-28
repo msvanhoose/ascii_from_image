@@ -1,6 +1,6 @@
 body{
     background-color: rgba(95, 158, 160, 0.712);
-    font-family:Arial, Helvetica, sans-serif;
+    /* font-family:Arial, Helvetica, sans-serif; */
 }
 
 h1, footer{
@@ -17,8 +17,8 @@ canvas{
 }
 
 .output_container{
-    font-size: .001em;
-    line-height: 80%;
-    font-family: monospace;
+    font-size: 4px;
+    /* line-height: 80%; */
+    /* font-family: monospace; */
     white-space: pre;
 }
