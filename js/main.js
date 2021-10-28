@@ -35,12 +35,12 @@ function set_image_to_gray_scale() {
     var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
     for (var i = 0; i < imgData.data.length; i += 4) {
-        var gary = Math.round((imgData.data[i] + imgData.data[i + 1] + imgData.data[i + 2]) / 3);
-        imgData.data[i] = gary;
-        imgData.data[i + 1] = gary;
-        imgData.data[i + 2] = gary;
+        var gandalf = Math.round((imgData.data[i] + imgData.data[i + 1] + imgData.data[i + 2]) / 3);
+        imgData.data[i] = gandalf;
+        imgData.data[i + 1] = gandalf;
+        imgData.data[i + 2] = gandalf;
 
-        pixelList.push(Math.floor(gary % 4));
+        pixelList.push(Math.floor(gandalf % 4));
     }
     ctx.putImageData(imgData, 0, 0);
     return;
@@ -51,18 +51,18 @@ function image_2_ascii() {
     var width = imgWidth;
     var height = imgHeight;
 
-    var ascii_text = '';
+    var ascii_text = '<pre>';
 
     var totalPixels = 0;
     for (var i = 0; i < pixels.length; i++) {
         if (!(i % width)) {
-            ascii_text += '<br>';
+            ascii_text += "\n"; //'<br>';
         }
         //ascii_text += pixels[i];
         switch (pixels[i]) {
             case 0:
                 //ascii_text += String.fromCharCode(32);
-                ascii_text += "_";
+                ascii_text += " ";
                 break;
             case 1:
                 //ascii_text += String.fromCharCode(61);
@@ -81,9 +81,8 @@ function image_2_ascii() {
         }
         totalPixels++;
     }
-    console.log("totalPixels: " + totalPixels);
-    console.log("width: " + width);
-    console.log("height: " + height);
+    ascii_text += '</pre>';
+    console.log({totalPixels,width,height});
     //console.log(ascii_text);
     document.getElementById("ascii_output").innerHTML = ascii_text;
 }
