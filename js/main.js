@@ -62,7 +62,7 @@ function image_2_ascii() {
         switch (pixels[i]) {
             case 0:
                 //ascii_text += String.fromCharCode(32);
-                ascii_text += "_";
+                ascii_text += " ";
                 break;
             case 1:
                 //ascii_text += String.fromCharCode(61);
@@ -81,9 +81,7 @@ function image_2_ascii() {
         }
         totalPixels++;
     }
-    console.log("totalPixels: " + totalPixels);
-    console.log("width: " + width);
-    console.log("height: " + height);
+    console.log({totalPixels,width,height});
     //console.log(ascii_text);
     document.getElementById("ascii_output").innerHTML = ascii_text;
 }

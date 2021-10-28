@@ -15,3 +15,10 @@ canvas{
     margin: auto;
     display: block;
 }
+
+.output_container{
+    font-size: .001em;
+    line-height: 80%;
+    font-family: monospace;
+    white-space: pre;
+}
