@@ -35,12 +35,12 @@ function set_image_to_gray_scale() {
     var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
     for (var i = 0; i < imgData.data.length; i += 4) {
-        var gary = Math.round((imgData.data[i] + imgData.data[i + 1] + imgData.data[i + 2]) / 3);
-        imgData.data[i] = gary;
-        imgData.data[i + 1] = gary;
-        imgData.data[i + 2] = gary;
+        var gandalf = Math.round((imgData.data[i] + imgData.data[i + 1] + imgData.data[i + 2]) / 3);
+        imgData.data[i] = gandalf;
+        imgData.data[i + 1] = gandalf;
+        imgData.data[i + 2] = gandalf;
 
-        pixelList.push(Math.floor(gary % 4));
+        pixelList.push(Math.floor(gandalf % 4));
     }
     ctx.putImageData(imgData, 0, 0);
     return;
