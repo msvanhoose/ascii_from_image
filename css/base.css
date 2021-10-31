@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(95, 158, 160, 0.712);
+    background-color: rgba(126, 126, 126, 0.5);
     /* font-family:Arial, Helvetica, sans-serif; */
 }
 
@@ -8,6 +8,7 @@ h1, footer{
     border:  2px solid black;
     text-align: center;
     font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 canvas{
@@ -21,4 +22,38 @@ canvas{
     /* line-height: 80%; */
     /* font-family: monospace; */
     white-space: pre;
+}
+
+.hide_input{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.custom_btn {
+    display: inline-block;
+    background-color: rgb(76, 168, 221);
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    margin: 2px 5px 2px 5px;
+}
+
+.custom_btn:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
+#input_container{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }

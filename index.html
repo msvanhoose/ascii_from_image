@@ -12,8 +12,11 @@
 <body>
     <h1>IMAGE-2-ASCII</h1>
     <div id="input_container">
-        <input type='file' id='image_upload' accept="image/*" onchange="import_image_from_upload(event)">
-        <input type='button' id='image_process_ascii' value="Process" onclick="image_2_ascii()">
+        <input type='file' id='image_upload' accept="image/*" class='hide_input'
+            onchange="import_image_from_upload(event)">
+        <label for='image_upload' class="custom_btn">Choose an image...</label>
+        <input type='button' id='image_process_ascii' class="custom_btn" value="Process" onclick="image_2_ascii()">
+        <input type='button' id='image_process_ascii' class="custom_btn" value="Clear ASCII" onclick="claer_ascii()">
     </div>
     <div id="canvas_container">
         <!--<img id='image_preview_display_hidden' style="display: none;" width="420" height="420">-->

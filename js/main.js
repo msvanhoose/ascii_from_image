@@ -86,3 +86,7 @@ function image_2_ascii() {
     //console.log(ascii_text);
     document.getElementById("ascii_output").innerHTML = ascii_text;
 }
+
+function claer_ascii(){
+    document.getElementById("ascii_output").innerHTML = "";
+}
