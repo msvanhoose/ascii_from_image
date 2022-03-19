@@ -1,0 +1,20 @@
+{
+  "name": "ascii_from_image",
+  "version": "0.1.0",
+  "description": "This was just a little goof off project, just to see how to do it. Not the best, would like to fix spaceing between characters and other issues.",
+  "main": "index.js",
+  "scripts": {
+    "localdev": "http-server assets/",
+    "test": "placeholder_for_cypress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samiam2013/ascii_from_image.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samiam2013/ascii_from_image/issues"
+  },
+  "homepage": "https://github.com/samiam2013/ascii_from_image#readme"
+}
